@@ -3,10 +3,10 @@ import json
 from datetime import datetime, timedelta
 import time
 
-#POST_CODE = "751024"
+
 age = 22
 
-pinCodes = ["722101"]
+pinCodes = ["722101"]   ## Here you can make a list of pincodes
 
 print_flag = 'Y'
 
@@ -21,7 +21,7 @@ while 1:
 
     count = 0
     
-    print("Searching...")
+    print("Searching for centers...")
     time.sleep(3)
 
     for pinCode in pinCodes:   
@@ -62,7 +62,7 @@ while 1:
                     a = 25
                    
             else:
-                print("No Response")
+                print("Program is not responding")
     if(count == 0):
         print("Currently no slots are available. Check later.")
     else:
